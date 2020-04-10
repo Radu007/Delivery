@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
 </head>
@@ -13,7 +14,7 @@
 	<div class="container">
 		<header class="header">
 			<a href="index.html">
-				<img class="logo" src="img/logo.svg" alt="logo">
+				<img class="logo wow fadeInLeft " src="img/logo.svg" alt="logo">
 			</a>
 			<input type="text" class="input adress-input" placeholder="Адрес доставки">
 			<div class="buttons">
@@ -21,7 +22,7 @@
 					<img src="img/user.svg" alt="user" class="button-icon">
 					<span class="button-text">Войти</span>
 				</button>
-				<button class="button">
+				<button class="button" id="cart-button">
 					<img src="img/basket.svg" alt="basket" class="button-icon">
 					<span class="button-text">Корзина</span>
 					
@@ -50,7 +51,7 @@
 						<!-- /.section-heading -->
 
 						<div class="cards">
-							<div class="card">
+							<div class="card wow fadeInUp">
 								<img src="img/cards/first.jpg" alt="">
 								<div class="card-text">
 									<div class="card-heading">
@@ -275,5 +276,9 @@
 		</div>
 
 	</div>
+
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
